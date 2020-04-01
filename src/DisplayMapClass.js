@@ -23,7 +23,7 @@ export class DisplayMapClass extends React.Component {
       this.mapRef.current,
       defaultLayers.vector.normal.map,
       {
-        // This map is centered over Europe
+        // This map is centered over Chile
         center: { lat: -33, lng: -70 },
         zoom: 4,
         pixelRatio: window.devicePixelRatio || 1
@@ -37,7 +37,7 @@ export class DisplayMapClass extends React.Component {
 
     // Create the default UI components to allow the user to interact with them
     // This variable is unused
-    const ui = H.ui.UI.createDefault(map, defaultLayers);
+    const ui = H.ui.UI.createDefault(map, defaultLayers, 'es-ES');
 
     this.setState({ map });
     this.geolocating();
