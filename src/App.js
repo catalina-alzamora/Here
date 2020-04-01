@@ -4,6 +4,7 @@ import React, { Component } from 'react';
 import Welcome from './Views/Welcome';
 import Login from './Views/Login'
 import Home from './Views/Home'
+import './App.css'
 import {
   BrowserRouter as Router,
   Switch,

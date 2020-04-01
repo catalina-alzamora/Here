@@ -7,7 +7,7 @@ import './welcome.css'
 class Welcome extends Component {
   render() {
     return (
-      <div 
+      <div id="BackgroundColor"
         className="section container">
         <h1>Bienvenido a App Salud</h1>
         <Link to="/RegisterDoc"> 
