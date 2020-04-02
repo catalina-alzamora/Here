@@ -12,17 +12,25 @@ handleAuth () {
 }
     render() {
       return (
-        <div className="section">
+      
+        <div className="row section container">
+           <form className="col s12">
+          <div className="row card-panel light-green lighten-5">
           <h1>Bienvenido</h1>
-        
-          <form>
-        
-            <input id="inputUserName" className="inputText" placeholder="Usuario"></input>
-            <input id="inputPassword" className="inputText" placeholder="Password"></input>
-            <Link to="/Home">
-            <button>Iniciar Sesion</button>
-            <button onClick={this.handleAuth}>Login con Google</button>
-            </Link>
+            <div className="input-field col s12">
+                  <input type="text" id="usuario" className="validate" required/>
+                  <label for="usuario">Usuario:</label>
+             </div>
+             <div className="input-field col s12">
+                  <input type="text" id="contraseña" className="validate" required/>
+                  <label for="contraseña">Usuario:</label>
+             </div>
+             <Link to="/home">
+             <button className="btn black-text light-green lighten-3 waves-effect waves-light s12 m12 l12">Iniciar Sesión</button>
+             <button onClick={this.handleAuth} className="btn black-text light-green lighten-3 waves-effect waves-light s12 m12 l12">Iniciar con Google</button>
+             </Link>
+             
+          </div> 
           </form>
         </div>
       );

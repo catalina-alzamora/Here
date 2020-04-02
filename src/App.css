@@ -1,3 +1,8 @@
 body {
-  background-color: rgb(184, 236, 184);;
+  background-color: #c5e1a5;
+  align-items: center;
+}
+
+#btn{
+  padding-left: 10px;
 }
