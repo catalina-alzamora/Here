@@ -24,7 +24,7 @@ class Welcome extends Component {
               <button className="sideBtn btn black-text light-green lighten-3 waves-effect waves-light s12 m6 l6">Soy Paciente</button>
             </Link>
             <div className="link s12 m12 l12">
-              <a href="">Ya estoy registrado</a>
+              <a href="/Login">Ya estoy registrado</a>
             </div>
 
           </div>
