@@ -1,17 +1,19 @@
 import React, { Component } from 'react';
-import { Link } from "react-router-dom";
 import Logo from "../images/logo-2.png";
+import '../notification.css'
 
 class Notification extends Component {
     render() {
         return (
-            <div className="row section container">
-                <a href=""><img className="imgLogo" alt="Logo" src={Logo} /></a>
-                <div className="card light-green lighten-5">
-                    <div className="card-content center">
-                        <h3>
+            <div className="flex">
+                <div className="box flex">
+                    <img className="imgLogo flex" alt="Logo" src={Logo} />
+                </div>
+                <div className="">
+                    <div className="text">
+                        <p className="card-content center">
                             Se le notificará cuando se acepte su solicitud
-                        </h3>
+                        </p>
                     </div>
                 </div>
             </div>
