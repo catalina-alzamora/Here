@@ -124,31 +124,38 @@ export default class MapPatient extends React.Component {
 
     render() {
         return (
-            <div>
+            <div className="row section container">
                 <div ref={this.mapRef} style={{ height: "500px" }} />
                 <div className="card light-green lighten-5">
+                
+                
                     <h5>
                         Ingresar dirección
                 </h5>
-                    <form onSubmit={this.handleSubmit}
+                <form onSubmit={this.handleSubmit}
                     >
-                        <label>Calle, número y ciudad</label>
-                        <div>
+                        <label for="">Calle, número y ciudad</label>
+                        <div className="input-field col s12">
                             <input
                                 type="text"
-                                className="form-control"
-                                placeholder="Dirección"
+                                id="direction"
                                 name="addressText"
                                 onChange={this.handleChange}
                             />
-                            <input className="button" type="submit" value="Buscar dirección" />
+                            <label for="direction">Dirección:</label></div>
+                            <div>
+                            <button className="btn-large  black-text light-green lighten-3 waves-effect waves-light s12 m6 l6" type="submit" value="Buscar dirección">Buscar Dirección</button>
                             <Link to="/Notification">
-                                <input className="button" type="button" value="Confirmar solicitud" />
+                                <button className="btn-large  black-text light-green lighten-3 waves-effect waves-light s12 m6 l6" type="button" value="Confirmar solicitud" >Confirmar Solicitud</button>
                             </Link>
-                        </div>
+                            
+                            </div>
+                            
                     </form>
+                    
+                    </div>
                 </div>
-            </div>
+           
         );
     }
 }
