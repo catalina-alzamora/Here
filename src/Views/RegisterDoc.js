@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Logo from '../images/logo-2.png';
 // import {Link} from "react-router-dom";
 
 class RegisterDoc extends Component {
@@ -7,6 +8,7 @@ class RegisterDoc extends Component {
         <div className="row section container">      
             <form className="col s12">
               <div className="row card-panel light-green lighten-5">
+                <img className="imgLogo" alt="Logo" src={Logo} /> 
                 <h3 className="center gray-text">Bienvenido Profesional </h3>
                 <div className="input-field col s12">
                   <input type="text" id="nombre" className="validate" required/>

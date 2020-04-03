@@ -3,6 +3,7 @@ import Logo from '../images/logo-2.png';
 import { db } from '../firebase';
 import { Link } from "react-router-dom";
 
+
 class Home extends Component {
 
   constructor(props) {
@@ -76,34 +77,34 @@ class Home extends Component {
 
   render() {
     return (
-      <div className="container">
+      <div className="row section container">
+        <div className="row card-panel light-green lighten-5">
         <img className="imgLogo" alt="Logo" src={Logo} />
-        <h1>Ingresa tus síntomas</h1>
-        <form onSubmit={this.handleSubmit.bind(this)} ref='contactForm' ></form>
-        <div className='form-group'>
-          <label htmlFor='symptom'>Síntomas</label>
-          <textarea className='form-control' id='symptom' rows='3' ref={symptom => this.inputSymptom = symptom}></textarea>
+        <h3>Ingresa tus síntomas</h3>
+        <form className="col s12" onSubmit={this.handleSubmit.bind(this)} ref='contactForm' ></form>
+        <div className='row input-field form-group col s12'>
+          <label for='symptom'>Síntomas:</label>
+          <textarea className='form-control materialize-textarea validate'required id='symptom' ref={symptom => this.inputSymptom = symptom}></textarea>
         </div>
-        <div className='form-group'>
-          <label htmlFor='historial'>Antecedentes</label>
-          <textarea className='form-control' id='historial' rows='3' ref={historial => this.inputHistorial = historial}></textarea>
+        <div className='row input-field form-group col s12'>
+          <label for='historial'>Antecedentes:</label>
+          <textarea className='form-control materialize-textarea validate'required id='historial'  ref={historial => this.inputHistorial = historial}></textarea>
         </div>
-        <div className='form-group'>
-          <label htmlFor='medicals'>Medicamentos que consume</label>
-          <textarea className='form-control' id='medicals' rows='3' ref={medicals => this.inputMedicals = medicals}></textarea>
+        <div className='row input-field form-group col s12'>
+          <label for='medicals'>Medicamentos que Consume:</label>
+          <textarea className='form-control materialize-textarea validate'required id='medicals'  ref={medicals => this.inputMedicals = medicals}></textarea>
         </div>
-        <div className='form-group'>
-          <label htmlFor='medicals'>Medicamentos que consume</label>
-          <textarea className='form-control' id='medicals' rows='3' ref={medicals => this.inputMedicals = medicals}></textarea>
-        </div>
-        <div className='form-group'>
-          <label htmlFor='medicals'>Inicio de Síntomas</label>
-          <textarea className='form-control' id='date' rows='3' ref={date => this.inputDate = date}></textarea>
+        <div className='row input-field form-group col s12'>
+          <label for='medicals'>Inicio de Síntomas:</label>
+          <textarea className='form-control materialize-textarea validate'required id='date'  ref={date => this.inputDate = date}></textarea>
         </div>
 
         <Link to="/MapPatient">
-          <button>Continuar</button>
+          <button className="btn-large  black-text light-green lighten-3 waves-effect waves-light s12 m6 l6">Continuar</button>
         </Link>
+
+        </div>
+        
 
 
 
