@@ -1,0 +1,30 @@
+.box.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .box {
+    padding: .5rem;
+    height: 300px;
+    border-radius: 4px;
+  }
+
+ .text {
+    background-color:rgba(246, 216, 9, 0.1);
+    border-radius: 10px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 14px;
+    color: #353957;
+ }
+
+ @media (min-width: 768px) {
+     .text{
+        margin-left:15%;
+        margin-right:15%;
+        font-size: 30px;
+        line-height: 60px;
+     }
+ }
