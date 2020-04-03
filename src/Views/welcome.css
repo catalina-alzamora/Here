@@ -12,3 +12,13 @@ margin:5%
     padding-top: 5%;
     
 }
+@media (max-width: 768px){
+    .imageDiv{
+        padding-left: 30%;
+        padding-right: 40%;
+        padding-top: 5%;
+        
+
+    }
+
+}
